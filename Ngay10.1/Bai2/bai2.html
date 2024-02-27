@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="wap">
+
+            <h2 class="h2">BANG DIEM CUA EM</h2>
+            <p>Semester 1: <input type="text" id="s1"></p>
+            <p>Semester 2: <input type="text" id="s2"></p>
+
+            <P>Year <select id="year">
+                <div class="option">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                </div>
+            </select></P>
+            <p>Summary:
+             <input type="text" id="sum" value="" >
+                <div class="click">
+                    <input type="button" name="btn_grade" onclick=" functionOK (s1.value, s2.value, year.value, sum.value)" value="OK" >
+                    
+                    <input type="button" onclick="functionCancel()" value="Cancel">
+                    <div id="str_grade">&nbsp;</div>
+                </div>
+            </p>
+    </form>
+    <script src="./index.js">
+    </script>
+</body>
+</html>

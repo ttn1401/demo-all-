@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <title>Document</title>
+    <style>
+        button.p-3.btn.btn-info {
+            background: #266bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="m-3">
+            <label>
+                Product Name: <br>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="name_phone" placeholder="Product Name" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+            </label>
+            <label>
+                Product Picture: <br>
+                  <div class="input-group">
+                    <input type="file" class="form-control" id="img" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                  </div>
+            </label>
+            <label>
+                Product Price: <br>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="price" placeholder="price" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+        </div>
+            <div class="botton">
+                <div class="m-3">
+                <button type="button" class="p-3 btn btn-primary " onclick="add(name_phone.value,img.value,price.value)">Add</button>
+                </div>
+            </div>
+            <hr>
+        <div class="content_cart">
+            <b class="fs-4 ms-4">ĐIỆN THOẠI NỔI BẬT NHẤT</b>
+            
+            <b  id="show_cart" class="d-flex"></b>
+            
+        </div>
+    </main>
+    <script src="./main.js"></script>
+   
+</body>
+</html>

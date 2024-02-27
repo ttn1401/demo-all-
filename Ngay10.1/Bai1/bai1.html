@@ -1,0 +1,22 @@
+<!-- Bài if switch -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <form action="#" name="frm-grade" method="post">
+        <label>Input student Name: </label>
+        <input type="text" name="txt_name" value="" />
+        <br/>
+        <label>Input Score: </label>
+        <input type="text" name="txt_score" value=""/>
+        <input type="button" name="btn_grade" onclick="grade(txt_score.value,txt_name.value)" value="Define Grade" />
+    </form>
+    <div id="str_grade">&nbsp;</div>
+</body>
+</html>

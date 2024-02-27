@@ -1,0 +1,26 @@
+.wap
+{
+    border: 2px solid red;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    background-color: Silver;
+
+}
+h2{
+    color: blue;
+    text-align: center;
+}
+
+.year{
+    text-align: center;
+}
+
+p{
+    margin-left: 5px;
+}
+
+.click{
+    text-align: center;
+    margin: 20px;
+}

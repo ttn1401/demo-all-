@@ -1,0 +1,94 @@
+style.css
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.header{
+    border-bottom: 1px solid black;
+}
+
+.header .list ul{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .list ul li{
+    list-style: none;
+}
+
+.list li a{
+    text-decoration: none;
+}
+
+.header h2{
+    max-width: 360px;
+    font-weight: normal;
+    border-bottom: 3px solid black;
+    margin-left: 50px;
+}
+
+.body{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.body .boder-p{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.body .col-3 img{
+    width: 350px;
+}
+
+.body .col-3 button {
+    padding: 10px;
+    border-radius: 13%;
+    margin-left: 219px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.body .col-6{
+    height: 500px;
+    background-image: url(./img/anh0.webp);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.viewall{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.viewall button{
+    padding: 20px 30px;
+}
+
+button{
+   
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+.buttonR{
+    margin-top: 51px;
+}
+
+.cost{
+    font-weight: bold;
+}
+
+.h1, h1 {
+    font-size: 2.5rem;
+    color: white;
+}
