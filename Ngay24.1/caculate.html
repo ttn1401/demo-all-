@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Number A(*)</p>
+    <input type="text" id="numberA" required>
+    <p>Number B(*)</p>
+    <input type="text" id="numberB" required>
+    <p>Summation: <button onclick="sum()">+</button></p>
+    <p>Subtraction: <button onclick="sub()">-</button></p>
+    <p>Multiplication: <button onclick="mul()">*</button></p>
+    <p>Division: <button onclick="div()">/</button></p>
+    <p>Result A & B:</p>
+    <input type="text" value="" id="result">
+    <script>
+        function sum(){
+            var numberA = parseFloat(document.getElementById("numberA").value);
+            var numberB = parseFloat(document.getElementById("numberB").value);
+            var result = document.getElementById("result");
+            var number = parseFloat(numberA+numberB);
+            result.value= number;
+        }
+        function sub(){
+            var numberA = parseFloat(document.getElementById("numberA").value);
+            var numberB = parseFloat(document.getElementById("numberB").value);
+            var result = document.getElementById("result");
+            var number = parseFloat(numberA-numberB);
+            result.value= number;
+        }
+        function mul(){
+            var numberA = parseFloat(document.getElementById("numberA").value);
+            var numberB = parseFloat(document.getElementById("numberB").value);
+            var result = document.getElementById("result");
+            var number = parseFloat(numberA*numberB);
+            result.value= number;
+        }
+        function div(){
+            var numberA = parseFloat(document.getElementById("numberA").value);
+            var numberB = parseFloat(document.getElementById("numberB").value);
+            var result = document.getElementById("result");
+            var number = parseFloat(numberA/numberB);
+            result.value= number;
+        }
+    </script>
+</body>
+    
+</html>
