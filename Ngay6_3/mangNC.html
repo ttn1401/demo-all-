@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js.bootstrap.min.js"></script>
+    <script src="./js.jquery.min.js"></script>
+    <script src="Array.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Fullname customer :</h2>
+    <input type="text" id="name"><br>
+    <h2>ID pro</h2> 
+    <input type="text" id="id"><br>
+    <h2>Name pro:</h2>
+    <input type="text" id="product"><br>
+    <h2>Quantity prot:</h2>
+    <input type="text" id="quantity"><br>
+    <h2>Price pro:</h2>
+    <input type="text" id="price"><br><br>
+
+    <input type="button" value="Save" onclick="save()">
+    <input type="button" value="Show" onclick="show()">
+    <input type="button" value="Reset" onclick="reset()">
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Auto Increment</th>
+                <th>Customer name</th>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody id="tbl"></tbody>
+    </table>
+</body>
+</html>
