@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>User Login</title>
+</head>
+<body>
+    <h1>User Login</h1>
+    <div>
+        <label>User Name
+        <br />
+        <input type="text" size="32" id="txt1" />    
+        </label>
+    </div>
+    <div>
+        <label>Password
+        <br />
+        <input type="password" size="32" id="txt2" />    
+        </label>
+    </div>
+    <div>
+        <button type="button" onclick="login()">Login</button>
+        <button type="button" onclick="cancel()">Clear</button>
+    </div>
+    <div id="sms"></div>
+    <script type="text/Javascript">
+        var username = ["admin","author","guest"];
+        var password = ["321","abc","xyz"];
+        function login()
+        {
+            var username = document.getElementById("txt1").value;
+            var password = document.getElementById("txt2").value;
+            var sms = "";  
+            for (var i=0; i<usernames.length;i++)
+            {
+                if(username==usernames[i])
+                {
+                    sms = "";
+                    if(password==passwords[i])
+                    {
+                        location.href="http://www.google.com";
+                
+                    }
+                    else{
+                        sms = "Invalud password!";
+                    }
+                    break;
+                }
+                else{
+                    sms ="Invalid username!";
+                }
+            }
+            document.getElementById("sms").innerHTML = sms;
+        }
+        function cancel()
+        {
+            document.getElementById("txt1").value="";
+            document.getElementById("txt2").value="";
+            document.getElementById("txt1").value="";
+        }
+    </script>
+</body>
+</html>
