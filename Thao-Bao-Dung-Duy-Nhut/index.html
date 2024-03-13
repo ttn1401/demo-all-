@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding: 16px;">
+<div class="head">
+    Số Phòng:
+    <input type="text" id="id">
+    <br>
+    Loại Phòng: 
+    <input type="text" id="loai">
+    <br>
+    Giá Phòng Thuê theo giờ:
+    <input type="text" id="gio">
+    <br>
+    Giá Phòng Thuê Qua Đêm:
+    <input type="text" id="dem">
+    <br>
+    Mô Tả: 
+    <input type="text" id="des">
+    <br>
+    Hình ảnh:
+    <input type="text" id="image">
+    <br>
+</div>
+<div>
+    Tìm kiếm phòng:
+    <input type="text" id="searchInput">
+    <input type="button" value="Tìm kiếm" onclick="showroom()">
+</div>
+
+    <br>
+    <input type="button" value="save" onclick="save()">
+    <input type="button" value="show" onclick="showroom()">
+    
+    <input type="button" value="reset" onclick="reset()">
+    <h1><center>Phòng</center></h1>
+    <table class="table thead-dark" style="background-color:rgb(255, 255, 255);">
+        <thead style="background-color: rgb(122, 250, 1);">
+            <tr>
+                <th>STT</th>
+                <th>Số Phòng</th>
+                <th>Loại Phòng</th>
+                <th>Giá Phòng Thuê Theo Giờ</th>
+                <th>Giá Phòng Thuê Qua Đêm</th>
+                <th>Mô Tả</th>
+                <th>Hình ảnh</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="room"></tbody>
+    </table>
+</body>
+</html>
