@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body style="padding: 16px;">
+<div class="head">
+    Number room:
+    <input type="text" id="id">
+    <br>
+    Kind of room: 
+    <input type="text" id="kind">
+    <br>
+    Day rate:
+    <input type="text" id="time">
+    <br>
+    Room rate:
+    <input type="text" id="rate">
+    <br>
+    Describe: 
+    <input type="text" id="des">
+    <br>
+    Image:
+    <input type="text" id="image">
+    <br>
+</div>
+    <br>
+    <input type="button" value="Save" onclick="save()">
+    <input type="button" value="Show" onclick="showroom()">
+    <input type="button" value="Reset" onclick="reset()">
+    <div>
+        Search for rooms :
+        <input type="text" id="searchInput">
+        <input type="button" value="Find" onclick="searchRoom()">
+        <!-- tìm kiếm loại phòng cần tìm -->
+    </div>
+    <h1><center>Room</center></h1>
+    <table class="table thead-dark" style="background-color:rgb(153, 234, 250);">
+        <thead style="background-color: rgb(117, 250, 1);">
+            <tr>
+                <th>ID</th>
+                <th>Number room</th>
+                <!-- Số phòng -->
+                <th>Kind of room</th>
+                <!-- Loại phòng -->
+                <th>Day rate</th>
+                <!-- Giá thuê trong ngày -->
+                <th>room rate</th>
+                <!-- Giá phòng  -->
+                <th>Describe</th>
+                <!-- Mô tả -->
+                <th>Image</th>
+                <!-- hình ảnh -->
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="room"></tbody>
+    </table>    
+</body>
+</html>

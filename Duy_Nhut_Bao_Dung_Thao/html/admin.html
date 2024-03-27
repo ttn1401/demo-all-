@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url("../img/bg.jpg"); /* Thay 'background.jpg' bằng đường dẫn đến ảnh nền */
+          background-size: cover;
+
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #sms {
+            margin-top: 20px;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Login</h1>
+        <div>
+            <label for="txt1">User Name</label>
+            <input type="text" id="txt1" />
+        </div>
+        <div>
+            <label for="txt2">Password</label>
+            <input type="password" id="txt2" />
+        </div>
+        <div>
+            <button type="button" onclick="login()">Login</button>
+            <button type="button" onclick="cancel()">Clear</button>
+        </div>
+        <div id="sms"></div>
+    </div>
+
+    <script>
+        var usernames = ["admin", "hh", "guest"];
+        var passwords = ["123", "abc", "xyz"];
+
+        function login() {
+            var username = document.getElementById("txt1").value;
+            var password = document.getElementById("txt2").value;
+            var sms = "";
+
+            for (var i = 0; i < usernames.length; i++) {
+                if (username == usernames[i]) {
+                    sms = "";
+                    if (password == passwords[i]) {
+                        window.location.href = "index.html";
+                    } else {
+                        sms = "Invalid password!";
+                    }
+                    break;
+                } else {
+                    sms = "Invalid username!";
+                }
+            }
+            document.getElementById("sms").innerHTML = sms;
+        }
+
+        function cancel() {
+            document.getElementById("txt1").value = "";
+            document.getElementById("txt2").value = "";
+            document.getElementById("sms").innerHTML = "";
+            document.getElementById("txt1").focus();
+        }
+    </script>
+</body>
+</html>
